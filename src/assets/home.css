@@ -1,0 +1,91 @@
+/* .home-container {
+  background-image: url('./image-2.jpg');
+  background-position: center;
+  background-size: cover;
+} */
+
+.left-slide-in-element {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.left-slide-in-element.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.top-slide-in-element {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.top-slide-in-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.right-slide-in-element {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.right-slide-in-element.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.bottom-slide-in-element {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.bottom-slide-in-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.hambuger-menu {
+  background-color: rgb(0,24,50);
+  color: white;
+  border-bottom: 3px solid orangered;
+  border-left: 3px solid orangered;
+  right: 0;
+  z-index: 5;
+  opacity: 1;
+  transform: translateX(100%);
+  /* transition: right 0.3s ease;
+  transform: translateX(0); */
+  border-radius: 20px;
+  width: 100px;
+  display: block;
+  position: fixed;
+  text-align: center;
+  height: 350px;
+  padding: 20px 30px 0px 30px;
+  margin-top: -10px;
+}
+
+.open {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.1s, transform 0.3s;
+}
+
+.hambuger-menu div {
+  padding: 10px;
+  margin-bottom: 30%;
+  justify-content: center;
+}
+
+.hambuger-menu div:hover {
+  background-color: orangered;
+  border-radius: 10px;
+  cursor: pointer;
+}
+

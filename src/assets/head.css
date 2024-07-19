@@ -1,0 +1,122 @@
+.head-container {
+  display: grid;
+  grid-template-columns: 60% 30%;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hello {
+  font-size: 300%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  width: 50%;
+  background-color: rgb(0,24,50);
+  border: 3px solid orangered;
+  border-radius: 15px;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+  transition: background-color 3s, box-shadow 3s;
+  animation: color-change 3s infinite alternate;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: rgb(0,24,50);
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+  }
+  25% {
+    background-color: #046bd1;
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+  }
+  50% {
+    background-color: #057ef8;
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+  }
+  75% {
+    background-color: #0e015a;
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+  }
+  100% {
+    background-color: #0c08e7;
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+  }
+}
+
+.im {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.name {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 90%;
+  text-align: center;
+  font-size: 350%;
+  font-weight: 500;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+
+.work-skill {
+  font-size: 150%;
+  background-color: white;
+  border: 3px solid orangered;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.gad-image-cont {
+  width: 100%;
+}
+
+.gad-image {
+  margin-top: 30px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+@media screen and (max-width: 859px) {
+  .head-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name-container {
+    padding-top: 30px;
+  }
+
+  .hello {
+    font-size: 30px;
+    width: 70%;
+  }
+
+  .name {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .work-skill {
+    font-size: 16px;
+    border: 2px solid orangered;
+  }
+
+  .gad-image-cont {
+    display: flex;
+    justify-content: center;
+  }
+  .gad-image {
+    width: 50%;
+  }
+}

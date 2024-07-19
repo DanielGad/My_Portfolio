@@ -1,0 +1,77 @@
+
+.skill-txt {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  border-bottom: 3px solid orangered;
+  margin-bottom: 20px;
+}
+
+.skill-txt2 {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  margin-left: 15%;
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  border-bottom: 3px solid orangered;
+}
+
+.skill-body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.ski {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid orangered;
+  border-radius: 10px;
+}
+
+.ski img {
+  transition: transform 0.7s ease;
+  cursor: pointer;
+}
+
+.ski img:hover {
+  transform: scale(1.1);
+}
+
+.logos-cont {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  row-gap: 20px;
+}
+
+.logos-cont div {
+  height: 15%;
+}
+
+
+@media screen and (max-width: 859px) {
+  .skill-body {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .logos-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}

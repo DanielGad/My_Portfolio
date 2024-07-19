@@ -1,0 +1,46 @@
+body {
+  background-color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 80px;
+  height: 3000px;
+}
+
+.slide-in.visible {
+  opacity: 1;
+}
+
+.top-slide-in {
+  transform: translateY(-100px);
+  transition: transform 1s, opacity 1s;
+}
+
+.top-slide-in.visible {
+  transform: translateY(0);
+}
+
+.bottom-slide-in {
+  transform: translateY(100px);
+  transition: transform 1s, opacity 1s;
+}
+
+.bottom-slide-in.visible {
+  transform: translateY(0);
+}
+
+.left-slide-in {
+  transform: translateX(-100px);
+  transition: transform 1s, opacity 1s;
+}
+
+.left-slide-in.visible {
+  transform: translateX(0);
+}
+
+.right-slide-in {
+  transform: translateX(100px);
+  transition: transform 1s, opacity 1s;
+}
+
+.right-slide-in.visible {
+  transform: translateX(0);
+}
