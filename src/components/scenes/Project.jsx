@@ -1,3 +1,4 @@
+// import { Link } from 'react-router-dom'
 import '../../assets/project.css'
 
 const Project = () => {
@@ -6,24 +7,29 @@ const Project = () => {
       <div className='project-txt slide-in left-slide-in'>Projects</div>
       <div className='project-body'>
         <div className='pro'>
-          <img src="/image-1.jpg" alt="image" width={'100%'}/>
-          <h2>Consistency is the Key</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aut eos libero beatae architecto quam nisi exercitationem ab tenetur corrupti deleniti, qui omnis. Natus eius numquam impedit iure quod temporibus.</p>
-          <button>View Project</button>
+          <img src="/myport.png" alt="image" width={'100%'}/>
+          <h2>Gadhub Portfolio</h2>
+          
+          <a href="https://gadhub.netlify.app/">
+          <button>Preview Project</button>
+          </a>
         </div>
 
         <div className='pro'>
-          <img src="/image-1.jpg" alt="image" width={'100%'}/>
-          <h2>Consistency is the Key</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aut eos libero beatae architecto quam nisi exercitationem ab tenetur corrupti deleniti, qui omnis. Natus eius numquam impedit iure quod temporibus.</p>
-          <button>View Project</button>
+          <img src="/evo.png" alt="image" width={'100%'}/>
+          <h2>EVOGYM</h2>
+          <a href="https://evogymcloneproject.netlify.app/">
+          <button>Preview Project</button>
+          </a>
         </div>
 
         <div className='pro'>
-          <img src="/image-1.jpg" alt="image" width={'100%'}/>
-          <h2>Consistency is the Key</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aut eos libero beatae architecto quam nisi exercitationem ab tenetur corrupti deleniti, qui omnis. Natus eius numquam impedit iure quod temporibus.</p>
-          <button>View Project</button>
+          <img src="/cnn.png" alt="image" width={'100%'}/>
+          <h2>CNN Clone</h2>
+        
+          <a href="https://incandescent-axolotl-9a8c84.netlify.app/">
+          <button>Preview Project</button>
+          </a>
         </div>
       </div>
     </div>
