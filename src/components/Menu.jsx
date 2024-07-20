@@ -7,7 +7,7 @@ import { Context } from './Context';
 import { Link } from 'react-scroll';
 
 const Menu = () => {
-  const { isMenuOpen, isSmallScreen, toggleMenu, isScrolled, isVisible } = useContext(Context);
+  const { isMenuOpen, isSmallScreen, toggleMenu, isScrolled  } = useContext(Context);
 
   return (
     <div className={`menu-container ${isScrolled ? 'scrolled' : 'top'}`}>
@@ -20,7 +20,7 @@ const Menu = () => {
 
       <div>
       {isSmallScreen ? 
-        <div className={`icon-div right-slide-in-element ${isVisible ? 'visible' : ''}`} onClick={toggleMenu}>
+        <div className={`icon-div`} onClick={toggleMenu}>
           <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars }/>
         </div>
        : 
