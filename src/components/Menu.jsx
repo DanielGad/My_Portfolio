@@ -49,7 +49,7 @@ const Menu = () => {
               </div>
             </Link>
 
-            <Link to={'contact'} smooth={true} duration={500} offset={-100}>
+            <Link to={'contact'} smooth={true} duration={500} offset={-150}>
               <div>
                 Contact
               </div>
@@ -57,9 +57,7 @@ const Menu = () => {
           
           </div>
       } 
-      {/* {
-        isMenuOpen ? 'slide-in left-slide-in' : ''
-      } */}
+
       </div>
     
     </div>

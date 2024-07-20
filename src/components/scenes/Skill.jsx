@@ -13,12 +13,11 @@ const Skill = () => {
           <img src="/web.jpg" alt="web image" width={'100%'}/>
           </div>
           <div>
-            <p>Transforming ideas into functional and visually appealing websites is my specialty. Whether you&apos;re starting from scratch or looking to revamp your online presence, I offer tailored web design and development solutions that cater to your brand and user needs. From responsive layouts to seamless user experiences, I work diligently to bring your vision to life.
+            <p>Transforming ideas into functional and visually appealing websites is my specialty. Whether you&apos;re starting from scratch or looking to revamp your online presence, I offer tailored web design and development solutions that cater to your brand and user needs. From responsive layouts to seamless user experiences, I work diligently to bring your vision to life.</p>
               <p><li><b>Responsive Design</b> - Crafted to look stunning across all devices, your website will provide a consistent experience for users on desktop, tablet, and mobile.</li></p>
             <p><li><b>User-Centric Approach</b> - I prioritize user experience, ensuring intuitive navigation and engaging interactions to keep visitors coming back.</li></p>
             <p><li><b>Custom Development</b> - Leveraging HTML, CSS, and JavaScript, I build unique and functional websites that align with your objectives.</li></p>
-            
-            </p>
+
           </div>
         </div>
 
@@ -28,12 +27,11 @@ const Skill = () => {
           <img src="/Graphic.jpg" alt="graphic image" width={'100%'}/>
           </div>
           <div>
-            <p>Captivating visuals are the heart of effective communication. My graphic design services encompass a wide range of creative solutions that enhance your brand identity and messaging. From logos to marketing collateral, I craft designs that resonate with your target audience.
+            <p>Captivating visuals are the heart of effective communication. My graphic design services encompass a wide range of creative solutions that enhance your brand identity and messaging. From logos to marketing collateral, I craft designs that resonate with your target audience.</p>
             <p><li><b>Branding</b> - From business cards to brochures, I create print-ready designs that convey professionalism and creativity.</li></p>
               <p><li><b>Print Materials</b> - Develop a strong brand identity with a memorable logo, color palette, and typography that reflects your mission.</li></p>
             <p><li><b>Digital Assets</b> - Engage your audience online with eye-catching social media graphics, banners, and digital advertisements.</li></p>
-            
-            </p>
+
           </div>
         </div>
       </div>

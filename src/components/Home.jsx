@@ -6,6 +6,8 @@ import About from './scenes/About';
 import Skill from './scenes/Skill';
 import { Link } from 'react-scroll';
 import Project from './scenes/Project';
+import Contact from './scenes/Contact';
+import Footer from './scenes/Footer';
 
 
 const Home = () => {
@@ -48,7 +50,7 @@ const Home = () => {
               </div>
             </Link>
 
-            <Link to={'contact'} smooth={true} duration={500} onClick={handleMenuClick} offset={-100}>
+            <Link to={'contact'} smooth={true} duration={500} onClick={handleMenuClick} offset={-150}>
               <div>
                 Contact
               </div>
@@ -61,6 +63,8 @@ const Home = () => {
       <About />
       <Skill />
       <Project />
+      <Contact />
+      <Footer />
 
     </div>
   )

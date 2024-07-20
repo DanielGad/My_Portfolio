@@ -6,7 +6,7 @@ const Project = () => {
     <div className='project-container' id='project'>
       <div className='project-txt slide-in left-slide-in'>Projects</div>
       <div className='project-body'>
-        <div className='pro'>
+        <div className='pro slide-in bottom-slide-in'>
           <img src="/myport.png" alt="image" width={'100%'}/>
           <h2>Gadhub Portfolio</h2>
           
@@ -15,7 +15,7 @@ const Project = () => {
           </a>
         </div>
 
-        <div className='pro'>
+        <div className='pro slide-in bottom-slide-in'>
           <img src="/evo.png" alt="image" width={'100%'}/>
           <h2>EVOGYM</h2>
           <a href="https://evogymcloneproject.netlify.app/">
@@ -23,7 +23,7 @@ const Project = () => {
           </a>
         </div>
 
-        <div className='pro'>
+        <div className='pro slide-in bottom-slide-in'>
           <img src="/cnn.png" alt="image" width={'100%'}/>
           <h2>CNN Clone</h2>
         
