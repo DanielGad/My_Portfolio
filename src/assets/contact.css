@@ -120,4 +120,17 @@
   .contact-cont {
     grid-template-columns: 1fr;
   }
+
+  .contact-img {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 300px;
+    margin-left: -15px;
+  }
+
+  .icons {
+    margin-left: 40px;
+  }
 }
