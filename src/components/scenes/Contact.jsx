@@ -40,7 +40,7 @@ const Contact = () => {
       <div className='left-cont'>
         <p className='let-chat'>Let&apos;s Chat</p>
         <p className='tell-me'>Tell me about your Project.</p>
-        <div>
+        <div className='contact-img-cont'>
           <img src="/contact.jpg" alt="contact image" width={'100%'} className='contact-img'/>
         </div>
       </div>
