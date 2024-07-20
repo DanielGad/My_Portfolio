@@ -1,5 +1,5 @@
 import '../assets/home.css';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { Context } from './Context';
 import Head from './scenes/Head';
 import About from './scenes/About';
@@ -11,7 +11,19 @@ import Footer from './scenes/Footer';
 
 
 const Home = () => {
-  const { isMenuOpen, setIsMenuOpen, isSmallScreen } = useContext(Context)
+  const { isMenuOpen, setIsMenuOpen, isSmallScreen } = useContext(Context);
+
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      window.scrollTo(0, 0);
+    };
+
+    window.addEventListener('unload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('unload', handleBeforeUnload);
+    };
+  }, []);
 
   if (!isSmallScreen == true) {
     setIsMenuOpen(false)
