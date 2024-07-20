@@ -111,6 +111,7 @@
   .contact-cont {
     display: flex;
     flex-direction: column;
+    width: 95%;
   }
 
   .contact-img {
@@ -122,5 +123,9 @@
     width: 90%;
     margin: 0 auto;
     padding: 20px;
+  }
+
+  .send-us {
+    margin-top: -20px;
   }
 }
