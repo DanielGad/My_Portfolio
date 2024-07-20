@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import '../../assets/contact.css'
+import { Context } from '../Context';
 
 const Contact = () => {
+  const { isSmallScreen } = useContext(Context);
   const [isSubmitting, setIsSubmitting] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
@@ -37,23 +39,35 @@ const Contact = () => {
     <>
     <div className='contact-txt slide-in right-slide-in'>Contact</div>
     <div className='contact-cont' id='contact'>
-      <div className='left-cont'>
-        <p className='let-chat'>Let&apos;s Chat</p>
-        <p className='tell-me'>Tell me about your Project.</p>
+      { 
+      isSmallScreen ? <div className='left-cont'>
         <div className='contact-img-cont'>
           <img src="/contact.jpg" alt="contact image" width={'100%'} className='contact-img'/>
         </div>
+        <p className='let-chat'>Let&apos;s Chat.</p>
+        <p className='tell-me'>Tell me about your Project.</p>
       </div>
+       : 
+      <div className='left-cont'>
+      <p className='let-chat'>Let&apos;s Chat.</p>
+      <p className='tell-me'>Tell me about your Project.</p>
+      <div className='contact-img-cont'>
+        <img src="/contact.jpg" alt="contact image" width={'100%'} className='contact-img'/>
+      </div>
+    </div>
+    }
+
 
       <div className='right-cont'>
-        <p className='send-us'>Send me a message.</p>
+        {/* <p className='send-us'>Send me a message.</p> */}
         <form className="contact-form" onSubmit={handleSubmit}>
-            <h2>Contact Us</h2>
+            <h2>Contacts</h2>
+            <p>Send me a message or chat me up through the media below;</p>
                 <input type="text" placeholder='Name:' name="name" value={formData.name} onChange={handleChange} required />
                 
                 <input type="email" placeholder='Email:' name="email" value={formData.email} onChange={handleChange} required />
 
-                <textarea name="message" placeholder='Message:' value={formData.message} onChange={handleChange} required />
+                <textarea name="message" placeholder='Message:' value={formData.message} onChange={handleChange} required rows={4}/>
             <button type="submit" disabled={isSubmitting}>
                 {isSubmitting ? 'Submitting...' : 'Submit'}
             </button>

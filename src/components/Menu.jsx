@@ -13,7 +13,7 @@ const Menu = () => {
     <div className={`menu-container ${isScrolled ? 'scrolled' : 'top'}`}>
       <div className={`logo-container ${isScrolled ? 'scrolled-2' : ''}`}>
       <Link to={'home'} smooth={true} duration={500} offset={-100}>
-                <img src={GadLogo} alt="Gad-Logo" width={"50px"}/>
+                <img src={GadLogo} alt="Gad-Logo" width={"50px"}/> 
             </Link>
         
       </div>
