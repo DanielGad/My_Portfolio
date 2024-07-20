@@ -1,8 +1,6 @@
-/* .home-container {
-  background-image: url('./image-2.jpg');
-  background-position: center;
-  background-size: cover;
-} */
+.home-container {
+  width: 100%;
+}
 
 .left-slide-in-element {
   opacity: 0;
@@ -59,8 +57,6 @@
   z-index: 5;
   opacity: 1;
   transform: translateX(100%);
-  /* transition: right 0.3s ease;
-  transform: translateX(0); */
   border-radius: 20px;
   width: 100px;
   display: block;

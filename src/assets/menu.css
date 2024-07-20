@@ -69,5 +69,8 @@
 
 
 @media screen and (max-width: 859px) {
-  
+  .menu-container {
+    position: fixed;
+    width: 100%;
+  }
 }
