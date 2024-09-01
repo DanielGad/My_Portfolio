@@ -7,8 +7,7 @@
   align-items: center;
   color: white;
   background-color: black;
-  margin: -8px;
-  padding: 10px 0px 10px 10px;
+  padding: 10px 0;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -24,7 +23,6 @@
 } */
 
 .top {
-  /* border-bottom: 3px solid orangered; */
   color: white;
   z-index: 100;
 }
@@ -34,6 +32,10 @@
   margin-right: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* .menu-container div {
+  width: 50%;
+} */
 
 .menu-link-container div {
   cursor: pointer;
@@ -48,9 +50,8 @@
 }
 
 .logo-container {
-  padding-left: 10px;
+  margin-left: 20px;
   margin-top: 10px;
-  /* filter: drop-shadow(0 0 20px rgb(255, 255, 255)); */
   cursor: pointer;
 }
 
@@ -69,7 +70,6 @@
 
 @media screen and (max-width: 859px) {
   .menu-container {
-    position: fixed;
     width: 100%;
   }
 }
