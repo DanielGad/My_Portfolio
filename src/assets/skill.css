@@ -10,9 +10,11 @@
   font-family: 'Courier New', Courier, monospace;
   border-bottom: 3px solid orangered;
   margin-bottom: 20px;
+  color: white;
 }
 
 .skill-txt2 {
+  color: white;
   display: flex;
   justify-content: center;
   width: 50px;
@@ -28,6 +30,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   column-gap: 20px;
+  color: white;
   width: 80%;
   margin: auto;
 }
@@ -36,7 +39,6 @@
   text-align: center;
   padding: 20px;
   border: 2px solid orangered;
-  border-radius: 10px;
 }
 
 .ski img {
