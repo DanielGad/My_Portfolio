@@ -18,24 +18,11 @@
   z-index: 10;
 }
 
-/* .logo-container.scrolled-2 {
-  filter: drop-shadow(0 0 20px rgb(0, 0, 0));
-} */
-
-.top {
-  color: white;
-  z-index: 100;
-}
-
 .menu-link-container {
   display: flex;
   margin-right: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* .menu-container div {
-  width: 50%;
-} */
 
 .menu-link-container div {
   cursor: pointer;

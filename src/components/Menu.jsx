@@ -10,7 +10,7 @@ const Menu = () => {
   const { isMenuOpen, isSmallScreen, toggleMenu, isScrolled  } = useContext(Context);
 
   return (
-    <div className={`menu-container ${isScrolled ? 'scrolled' : 'top'}`}>
+    <div className={`menu-container ${isScrolled ? 'scrolled' : ''}`}>
       <div className={`logo-container ${isScrolled ? 'scrolled-2' : ''}`}>
       <Link to={'home'} smooth={true} duration={500} offset={-100}>
                 <img src={GadLogo} alt="Gad-Logo" width={"50px"}/> 
