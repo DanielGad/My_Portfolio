@@ -53,6 +53,40 @@
   cursor: pointer;
 }
 
+.ccc {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.theme {
+  color: white;
+
+}
+
+body.dark .theme {
+  color: white;
+}
+
+body.light .theme {
+  color: orangered;
+}
+
+.theme {
+  transition: transform 0.5s ease;
+}
+
+body.dark .theme {
+  transform: rotate(180deg);
+}
+
+body.light {
+  .menu-container {
+    background-color: white;
+    color: black;
+  }
+}
+
 
 
 @media screen and (max-width: 859px) {

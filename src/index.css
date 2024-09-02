@@ -4,6 +4,46 @@ body {
   margin-top: 80px;
 }
 
+body.light {
+  background-color: white;
+}
+
+body.light {
+  .hello, .im, .name, .work-skill, .contactme {
+    color: black;
+  }
+
+  .contactme {
+    background-color: white;
+    border: 1px solid black;
+  }
+
+  .contactme:hover {
+    background-color: rgb(116, 115, 115);
+  }
+
+  .abt-tag, .text-cont {
+    color: black;
+  }
+
+  .skill-body, .skill-txt, .skill-txt2 {
+    color: black;
+  }
+
+  .project-txt {
+    color: black;
+  }
+
+  .pro {
+    background-color: white;
+    color: black;
+  }
+
+  .contact-txt, .let-chat, .tell-me {
+    color: black;
+  }
+}
+
 .slide-in.visible {
   opacity: 1;
 }
