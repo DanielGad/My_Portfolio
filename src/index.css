@@ -2,10 +2,12 @@ body {
   background-color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 80px;
+  transition: background-color 1s ease, color 1s ease;
 }
 
 body.light {
   background-color: white;
+  transition: background-color 1s ease, color 1s ease;
 }
 
 body.light {

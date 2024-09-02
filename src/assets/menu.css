@@ -10,6 +10,7 @@
   padding: 10px 0;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  transition: background-color 1s ease, color 1s ease;
 }
 
 .scrolled {
@@ -59,13 +60,8 @@
   align-items: center;
 }
 
-.theme {
-  color: white;
-
-}
-
 body.dark .theme {
-  color: white;
+  color: orangered;
 }
 
 body.light .theme {
@@ -84,6 +80,7 @@ body.light {
   .menu-container {
     background-color: white;
     color: black;
+    transition: background-color 1s ease, color 1s ease;
   }
 }
 
