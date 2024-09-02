@@ -38,7 +38,7 @@ const Menu = () => {
       </button>
       {isSmallScreen ? 
         <div className={`icon-div`} onClick={toggleMenu}>
-          <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars }/>
+          <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars } className={`hamclose ${isMenuOpen ? 'icon-open' : 'icon-close'}`}/>
         </div>
        : 
         <div className='menu-link-container'>

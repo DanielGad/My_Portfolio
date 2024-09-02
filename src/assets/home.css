@@ -67,6 +67,16 @@
   margin-top: -10px;
 }
 
+body.light .hambuger-menu {
+  background-color: white;
+  color: black;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+body.dark .hambuger-menu {
+  transition: background-color 1s ease, color 1s ease;
+}
+
 .open {
   opacity: 1;
   transform: translateX(0);

@@ -54,6 +54,18 @@
   cursor: pointer;
 }
 
+.hamclose {
+  transition: transform 0.1s ease-in-out;
+}
+
+.icon-open {
+  transform: rotate(90deg);
+}
+
+.icon-close {
+  transform: rotate(0deg);
+}
+
 .ccc {
   display: flex;
   gap: 15px;
