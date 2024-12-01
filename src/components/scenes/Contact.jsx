@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc, Timestamp } from 'firebase/firestore';
 import { db } from '../firebase';
 import '../../assets/contact.css'
 import { Context } from '../Context';
@@ -24,16 +24,23 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+  
+    const formDataWithTimestamp = {
+      ...formData,
+      timestamp: Timestamp.now(), // Add the current date and time
+    };
+  
     try {
-        await addDoc(collection(db, 'data-info'), formData);
-        alert('Form submitted successfully!');
-        setFormData({ name: '', email: '', message: '' });
-        setIsSubmitting(false)
+      const docRef = await addDoc(collection(db, 'data-info'), formDataWithTimestamp);
+      console.log('Document written with ID:', docRef.id);
+      alert('Form submitted successfully!');
+      setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-        console.error('Error adding document: ', error);
-        setIsSubmitting(false)
+      console.error('Error adding document: ', error);
+    } finally {
+      setIsSubmitting(false);
     }
-};
+  };
 
   return (
     <>
