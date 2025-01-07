@@ -79,14 +79,14 @@ const Contact = () => {
                 {isSubmitting ? 'Submitting...' : 'Submit'}
             </button>
             <div className='icons'>
-            <a href="https://wa.me/2348084331922" target="_blank"><img src="/wbw.png" alt="WhatsApp logo"  /></a>
+            <a href="https://wa.me/2348084331922" target="_blank"><img src="/whatsapp.svg" alt="WhatsApp logo"  /></a>
             <div className='fb-con'>
-            <a href="https://facebook.com/adeyemidanielgad/" target="_blank"><img src="/fbw.png" alt="Facebook logo" className='fb-icon' width={"20px"}/></a>
+            <a href="https://facebook.com/adeyemidanielgad/" target="_blank"><img src="/facebook.svg" alt="Facebook logo" className='fb-icon' width={"20px"}/></a>
             </div>
-            <a href="https://www.instagram.com/adeyemi_daniel_gad/" target="_blank"><img src="/ibw.png" alt="Instagram logo" width={"50px"}/></a>
+            <a href="https://www.instagram.com/adeyemidanielgad/" target="_blank"><img src="/instagram.svg" alt="Instagram logo" width={"50px"}/></a>
             <a href="https://www.x.com/adedanielgad/" target="_blank"><img src="/X.avif" alt="X logo" /></a>
-            <a href="https://www.linkedin.com/in/adeyemi-daniel-gad/" target="_blank"><img src="/libw.png" alt="Linkedin logo" /></a>
-            <a href="mailto:adeyemidanielgad@gmail.com" target="_blank"><img src="/ebw.png" alt="Linkedin logo" /></a>
+            <a href="https://www.linkedin.com/in/adeyemidanielgad/" target="_blank"><img src="/linkedin.svg" alt="Linkedin logo" /></a>
+            <a href="mailto:adeyemidanielgad@gmail.com" target="_blank"><img src="/email.svg" alt="Linkedin logo" /></a>
               
             </div>
         </form>
